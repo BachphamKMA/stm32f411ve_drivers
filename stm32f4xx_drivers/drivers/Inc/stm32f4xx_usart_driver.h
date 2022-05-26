@@ -55,13 +55,13 @@ typedef struct
 #define USART_STD_BAUD_1200					1200
 #define USART_STD_BAUD_2400					400
 #define USART_STD_BAUD_9600					9600
-#define USART_STD_BAUD_19200 				19200
-#define USART_STD_BAUD_38400 				38400
-#define USART_STD_BAUD_57600 				57600
-#define USART_STD_BAUD_115200 				115200
-#define USART_STD_BAUD_230400 				230400
-#define USART_STD_BAUD_460800 				460800
-#define USART_STD_BAUD_921600 				921600
+#define USART_STD_BAUD_19200 					19200
+#define USART_STD_BAUD_38400 					38400
+#define USART_STD_BAUD_57600 					57600
+#define USART_STD_BAUD_115200 					115200
+#define USART_STD_BAUD_230400 					230400
+#define USART_STD_BAUD_460800 					460800
+#define USART_STD_BAUD_921600 					921600
 #define USART_STD_BAUD_2M 					2000000
 #define SUART_STD_BAUD_3M 					3000000
 
@@ -111,11 +111,11 @@ typedef struct
 #define USART_READY 				0
 
 
-#define 	USART_EVENT_TX_CMPLT   	0
-#define		USART_EVENT_RX_CMPLT   	1
-#define		USART_EVENT_IDLE      	2
-#define		USART_EVENT_CTS       	3
-#define		USART_EVENT_PE        	4
+#define 	USART_EVENT_TX_CMPLT   		0
+#define		USART_EVENT_RX_CMPLT   		1
+#define		USART_EVENT_IDLE      		2
+#define		USART_EVENT_CTS       		3
+#define		USART_EVENT_PE        		4
 #define		USART_ERR_FE     		5
 #define		USART_ERR_NE    	 	6
 #define		USART_ERR_ORE    		7
