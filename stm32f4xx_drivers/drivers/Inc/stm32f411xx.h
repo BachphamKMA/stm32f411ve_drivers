@@ -336,18 +336,18 @@ typedef struct{
 #define IRQ_NO_EXTI4 		10
 #define IRQ_NO_EXTI9_5 		23
 #define IRQ_NO_EXTI15_10 	40
-#define IRQ_NO_SPI1			35
-#define IRQ_NO_SPI2         36
-#define IRQ_NO_SPI3         51
-#define IRQ_NO_SPI4
-#define IRQ_NO_I2C1_EV     31
-#define IRQ_NO_I2C1_ER     32
-#define IRQ_NO_USART1	    37
-#define IRQ_NO_USART2	    38
-#define IRQ_NO_USART3	    39
-#define IRQ_NO_UART4	    52
-#define IRQ_NO_UART5	    53
-#define IRQ_NO_USART6	    71
+#define IRQ_NO_SPI1		35
+#define IRQ_NO_SPI2         	36
+#define IRQ_NO_SPI3         	51
+#define IRQ_NO_SPI4		//(no used)
+#define IRQ_NO_I2C1_EV     	31
+#define IRQ_NO_I2C1_ER     	32
+#define IRQ_NO_USART1	    	37
+#define IRQ_NO_USART2	    	38
+#define IRQ_NO_USART3	    	39
+#define IRQ_NO_UART4	    	52
+#define IRQ_NO_UART5	    	53
+#define IRQ_NO_USART6	    	71
 
 
 /*
@@ -376,32 +376,32 @@ typedef struct{
 /*
  * vị trí bit của SPI CR1
  */
-#define SPI_CR1_CPHA		0
-#define SPI_CR1_CPOL		1
-#define SPI_CR1_MSTR		2
+#define SPI_CR1_CPHA			0
+#define SPI_CR1_CPOL			1
+#define SPI_CR1_MSTR			2
 #define SPI_CR1_BR			3
 #define SPI_CR1_SPE			4
-#define SPI_CR1_LSBFIRST	7
+#define SPI_CR1_LSBFIRST		7
 #define SPI_CR1_SSI			8
 #define SPI_CR1_SSM			9
-#define SPI_CR1_RXONLY		10
+#define SPI_CR1_RXONLY			10
 #define SPI_CR1_DFF			11
-#define SPI_CR1_CRCNEXT		12
-#define SPI_CR1_CRCEN		13
-#define SPI_CR1_BIDIOE		14
-#define SPI_CR1_BIDIMODE	15
+#define SPI_CR1_CRCNEXT			12
+#define SPI_CR1_CRCEN			13
+#define SPI_CR1_BIDIOE			14
+#define SPI_CR1_BIDIMODE		15
 
 /*
  * vị trí bit của SPI CR2
  */
 
-#define SPI_CR2_RXDMAEN		0
-#define SPI_CR2_TXDMAEN		1
-#define SPI_CR2_SSOE		2
+#define SPI_CR2_RXDMAEN			0
+#define SPI_CR2_TXDMAEN			1
+#define SPI_CR2_SSOE			2
 #define SPI_CR2_FRF			4
-#define SPI_CR2_ERRIE		5
-#define SPI_CR2_RXNEIE		6
-#define SPI_CR2_TXEIE		7
+#define SPI_CR2_ERRIE			5
+#define SPI_CR2_RXNEIE			6
+#define SPI_CR2_TXEIE			7
 
 /*
  * vị trí bit của SPI SR
@@ -409,9 +409,9 @@ typedef struct{
 
 #define SPI_SR_RXNE			0
 #define SPI_SR_TXE			1
-#define SPI_SR_CHSIDE		2
+#define SPI_SR_CHSIDE			2
 #define SPI_SR_UDR			3
-#define SPI_SR_CRCERR		4
+#define SPI_SR_CRCERR			4
 #define SPI_SR_MODF			5
 #define SPI_SR_OVR			6
 #define SPI_SR_BSY			7
@@ -425,31 +425,31 @@ typedef struct{
  */
 
 #define I2C_CR1_PE			0
-#define I2C_CR1_SMBUS		1
-#define I2C_CR1_SMBTYPE		3
-#define I2C_CR1_ENARP		4
-#define I2C_CR1_ENPEC		5
-#define I2C_CR1_ENGC		6
-#define I2C_CR1_NOSTRETCH	7
-#define I2C_CR1_START		8
-#define I2C_CR1_STOP		9
+#define I2C_CR1_SMBUS			1
+#define I2C_CR1_SMBTYPE			3
+#define I2C_CR1_ENARP			4
+#define I2C_CR1_ENPEC			5
+#define I2C_CR1_ENGC			6
+#define I2C_CR1_NOSTRETCH		7
+#define I2C_CR1_START			8
+#define I2C_CR1_STOP			9
 #define I2C_CR1_ACK			10
 #define I2C_CR1_POS			11
 #define I2C_CR1_PEC			12
-#define I2C_CR1_ALERT		13
-#define I2C_CR1_SWRST		15
+#define I2C_CR1_ALERT			13
+#define I2C_CR1_SWRST			15
 
 
 /*
  * vị trí bit của I2C CR2
  */
 
-#define I2C_CR2_FREQ		0
-#define I2C_CR2_ITERREN		8
-#define I2C_CR2_ITEVTEN		9
-#define I2C_CR2_ITBUFEN		10
-#define I2C_CR2_DMAEN		11
-#define I2C_CR2_LAST		12
+#define I2C_CR2_FREQ			0
+#define I2C_CR2_ITERREN			8
+#define I2C_CR2_ITEVTEN			9
+#define I2C_CR2_ITBUFEN			10
+#define I2C_CR2_DMAEN			11
+#define I2C_CR2_LAST			12
 
 /*
  *  vị trí bit của I2C OAR1
@@ -464,17 +464,17 @@ typedef struct{
  * vị trí bit của I2C SR1
  */
 
-#define I2C_SR1_SB				0
+#define I2C_SR1_SB			0
 #define I2C_SR1_ADDR			1
-#define I2C_SR1_BTF				2
+#define I2C_SR1_BTF			2
 #define I2C_SR1_ADD10			3
 #define I2C_SR1_STOPF			4
 #define I2C_SR1_RxNE			6
-#define I2C_SR1_TxE				7
+#define I2C_SR1_TxE			7
 #define I2C_SR1_BERR			8
 #define I2C_SR1_ARLO			9
-#define I2C_SR1_AF				10
-#define I2C_SR1_OVR				11
+#define I2C_SR1_AF			10
+#define I2C_SR1_OVR			11
 #define I2C_SR1_PECERR			12
 #define I2C_SR1_TIMEOUT			14
 #define I2C_SR1_SMBALERT		15
@@ -483,9 +483,9 @@ typedef struct{
  * vị trí bit của I2C SR2
  */
 
-#define I2C_SR2_MSL				0
+#define I2C_SR2_MSL			0
 #define I2C_SR2_BUSY			1
-#define I2C_SR2_TRA				2
+#define I2C_SR2_TRA			2
 #define I2C_SR2_GENCALL			4
 #define I2C_SR2_SMBDEFAULT		5
 #define I2C_SR2_SMBHOST			6
@@ -558,12 +558,12 @@ typedef struct{
 #define USART_SR_FE        				1
 #define USART_SR_NE        				2
 #define USART_SR_ORE       				3
-#define USART_SR_IDLE       			4
-#define USART_SR_RXNE        			5
+#define USART_SR_IDLE       				4
+#define USART_SR_RXNE        				5
 #define USART_SR_TC        				6
-#define USART_SR_TXE        			7
-#define USART_SR_LBD        			8
-#define USART_SR_CTS        			9
+#define USART_SR_TXE        				7
+#define USART_SR_LBD        				8
+#define USART_SR_CTS        				9
 
 
 #include "stm32f411xx_gpio_driver.h"
